@@ -1,15 +1,15 @@
-<!-- <script lang="ts">
+<script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import ToogleMenu from '$lib/Svg/ToogleMenu.svelte';
 	import CloseMenu from '$lib/Svg/CloseMenu.svelte';
 
-	let items = [
-		{ label: 'Locations', href: '/locations' },
-		{ label: 'Artists', href: '/artists' },
-		{ label: 'About Us', href: '/aboutus' },
-		{ label: 'Contact', href: '/contact' }
-	];
+	// let items = [
+	// 	{ label: 'Locations', href: '/locations' },
+	// 	{ label: 'Artists', href: '/artists' },
+	// 	{ label: 'About Us', href: '/aboutus' },
+	// 	{ label: 'Contact', href: '/contact' }
+	// ];
 
 	let isMenuOpen = false;
 	let isScrolled = false;
@@ -43,9 +43,9 @@
 			</a>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12 lg:justify-center">
-			{#each items as item}
+			<!-- {#each items as item}
 				<a href={item.href} class="text-sm font-semibold leading-6 text-gray-300">{item.label}</a>
-			{/each}
+			{/each} -->
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
 		<button type="button" class="lg:hidden text-gray-300 hover:text-white" on:click={toggleMenu}>
@@ -77,7 +77,7 @@
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
-							{#each items as item}
+							<!-- {#each items as item}
 								<a
 									href={item.href}
 									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:text-white"
@@ -85,11 +85,11 @@
 								>
 									{item.label}
 								</a>
-							{/each}
+							{/each} -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	{/if}
-</header> -->
+</header>
