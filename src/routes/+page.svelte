@@ -1,9 +1,7 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageServerData } from './$types';
 
-	export let data: PageData;
-
-	console.log(data);
+	export let data: PageServerData;
 </script>
 
-<img src={data.imageData} alt="test" />
+<img src={data.image.asset?.url} alt="test" />
