@@ -1,12 +1,14 @@
-<script lang='ts'>
+<script lang="ts">
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import '../app.css';
+	import type { LayoutServerData } from './$types';
+
+	export let data: LayoutServerData;
 </script>
 
-<div class="app">
-	<Header />
-
-	<main>
-		<slot />
-	</main>
-</div>
+<Header logo={data.image.asset?.url} />
+<main>
+	<slot />
+</main>
+<Footer company={'uKlick Studios'} />

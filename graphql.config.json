@@ -1,4 +1,4 @@
 {
-    "name": "@uKlickStudios",
-    "schemaPath": "graphql.schema.json" 
+	"name": "@uKlickStudios",
+	"schemaPath": "graphql.schema.json"
 }

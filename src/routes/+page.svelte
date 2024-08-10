@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { PageServerData } from './$types';
+	import type { LayoutServerData } from './$types';
 
-	export let data: PageServerData;
+	export let data: LayoutServerData;
 </script>
 
 <img src={data.image.asset?.url} alt="test" />

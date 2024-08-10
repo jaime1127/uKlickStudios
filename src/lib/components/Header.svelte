@@ -4,12 +4,14 @@
 	import ToogleMenu from '$lib/Svg/ToogleMenu.svelte';
 	import CloseMenu from '$lib/Svg/CloseMenu.svelte';
 
-	// let items = [
-	// 	{ label: 'Locations', href: '/locations' },
-	// 	{ label: 'Artists', href: '/artists' },
-	// 	{ label: 'About Us', href: '/aboutus' },
-	// 	{ label: 'Contact', href: '/contact' }
-	// ];
+	let items = [
+		{ label: 'Book', href: '/book' },
+		{ label: 'Portfolio', href: '/portfolio' },
+		{ label: 'About Us', href: '/aboutus' },
+		{ label: 'Contact', href: '/contact' }
+	];
+
+	export let logo: string | undefined = undefined;
 
 	let isMenuOpen = false;
 	let isScrolled = false;
@@ -35,17 +37,22 @@
 	});
 </script>
 
-<header class="fixed inset-x-0 top-0 z-50 bg-slate-900 {isScrolled ? 'bg-gray-900' : ''}">
+<header
+	class="fixed inset-x-0 top-0 z-50 bg-slate-900 {isScrolled ? 'bg-gray-900' : ''}"
+	data-sveltekit-preload-code="tap"
+>
 	<nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
 		<div class="flex lg:flex-1 rounded-full">
-			<a href="/" class="-m-1.5 p-1.5">
-				<img class="h-8 w-auto rounded-full" src="" alt="FIXTHIS" />
-			</a>
+			{#if logo}
+				<a href="/" class="-m-1.5 p-1.5">
+					<img class="h-8 w-auto rounded-full" src={logo} alt="FIXTHIS" />
+				</a>
+			{/if}
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12 lg:justify-center">
-			<!-- {#each items as item}
+			{#each items as item}
 				<a href={item.href} class="text-sm font-semibold leading-6 text-gray-300">{item.label}</a>
-			{/each} -->
+			{/each}
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
 		<button type="button" class="lg:hidden text-gray-300 hover:text-white" on:click={toggleMenu}>
@@ -61,10 +68,12 @@
 				out:fly={{ x: -200, duration: 300 }}
 			>
 				<div class="flex items-center justify-between">
-					<a href="/" class="-m-1.5 p-1.5" on:click={toggleMenu}>
-						<span class="sr-only">Your Company</span>
-						<img class="h-8 w-auto" src="" alt="infamous ink logo" />
-					</a>
+					{#if logo}
+						<a href="/" class="-m-1.5 p-1.5" on:click={toggleMenu}>
+							<span class="sr-only">Your Company</span>
+							<img class="h-8 w-auto rounded-full" src={logo} alt="infamous ink logo" />
+						</a>
+					{/if}
 					<button
 						type="button"
 						class="-m-2.5 rounded-md p-2.5 text-gray-300 hover:text-white"
@@ -77,7 +86,7 @@
 				<div class="mt-6 flow-root">
 					<div class="-my-6 divide-y divide-gray-500/10">
 						<div class="space-y-2 py-6">
-							<!-- {#each items as item}
+							{#each items as item}
 								<a
 									href={item.href}
 									class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:text-white"
@@ -85,7 +94,7 @@
 								>
 									{item.label}
 								</a>
-							{/each} -->
+							{/each}
 						</div>
 					</div>
 				</div>
