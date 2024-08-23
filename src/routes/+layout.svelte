@@ -5,6 +5,7 @@
 	import type { LayoutServerData } from './$types';
 
 	export let data: LayoutServerData;
+
 </script>
 
 <Header logo={data.image.asset?.url} />
