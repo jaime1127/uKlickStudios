@@ -1,4 +1,4 @@
-import { fetchImageData } from '../content/gql';
+import { fetchImageData } from '../../packages/content-components/gql';
 import type { LayoutServerLoad } from './$types';
 import type { TestQuery } from '$lib/generated/types';
 

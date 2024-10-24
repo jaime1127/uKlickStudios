@@ -22,8 +22,5 @@
 			alt="tattoo grid list"
 			class="pointer-events-none object-cover group-hover:opacity-75 p-6"
 		/>
-		<!-- {#if button}
-			<Button text="Book Now" />
-		{/if} -->
 	</div>
 </div>

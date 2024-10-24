@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import ToogleMenu from '$lib/Svg/ToogleMenu.svelte';
-	import CloseMenu from '$lib/Svg/CloseMenu.svelte';
+	import ToogleMenu from '../icon-components/ToogleMenu.svelte';
+	import CloseMenu from '../icon-components/CloseMenu.svelte';
 
 	let items = [
 		{ label: 'Book', href: '/book' },

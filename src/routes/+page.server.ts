@@ -10,8 +10,6 @@ export const load: PageServerLoad = async () => {
 			}
 		});
 
-        console.log(response)
-
 		if (!response.ok) {
 			throw new Error(`Failed to fetch Calendly data: ${response.statusText}`);
 		}
@@ -22,7 +20,7 @@ export const load: PageServerLoad = async () => {
 		};
 	} catch (error) {
 		return {
-			error:  'An error occurred while fetching Calendly data'
+			error: 'An error occurred while fetching Calendly data'
 		};
 	}
 };
