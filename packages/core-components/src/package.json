@@ -1,0 +1,17 @@
+{
+	"name": "@uklick/core-components",
+	"version": "1.0.0",
+	"main": ".src/index.ts",
+	"type": "module",
+	"svelte": "./src/index.ts",
+	"license": "UNLICENSED",
+	"exports": {
+		".": {
+			"default": "./src/index.ts",
+			"svelte": "./src/index.ts"
+		}
+	},
+	"dependencies": {
+		"svelte": "^3.0.0"
+	}
+}

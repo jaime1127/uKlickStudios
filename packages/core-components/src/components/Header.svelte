@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import ToogleMenu from '../icon-components/ToogleMenu.svelte';
-	import CloseMenu from '../icon-components/CloseMenu.svelte';
+	import ToogleMenu from '../../icon-components/ToogleMenu.svelte';
+	import CloseMenu from '../../icon-components/CloseMenu.svelte';
 
 	let items = [
 		{ label: 'Book', href: '/book' },
@@ -37,10 +37,7 @@
 	});
 </script>
 
-<header
-	class="fixed inset-x-0 top-0 z-50 bg-slate-900 {isScrolled ? 'bg-gray-900' : ''}"
-	data-sveltekit-preload-code="tap"
->
+<header class=" bg-slate-900 {isScrolled ? 'bg-gray-900' : ''}" data-sveltekit-preload-code="tap">
 	<nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
 		<div class="flex lg:flex-1 rounded-full">
 			{#if logo}
