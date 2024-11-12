@@ -71,7 +71,7 @@ importers:
         version: link:../../packages/content-components
       '@uklick/core-components':
         specifier: workspace:*
-        version: link:../../packages/icon-components
+        version: link:../../packages/core-components
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -242,6 +242,9 @@ importers:
       '@types/eslint':
         specifier: ^9.6.0
         version: 9.6.1
+      '@uklick/icon-components':
+        specifier: workspace:*
+        version: link:../icon-components
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)

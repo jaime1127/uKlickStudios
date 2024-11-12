@@ -87,6 +87,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies__sveltejs_kit: string;
 	export const npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 	export const npm_package_devDependencies__types_eslint: string;
+	export const npm_package_devDependencies__uklick_icon_components: string;
 	export const npm_package_exports___default: string;
 	export const npm_package_exports___gql_import: string;
 	export const npm_package_exports___svelte: string;
@@ -236,6 +237,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies__sveltejs_kit: string;
 		npm_package_devDependencies__sveltejs_vite_plugin_svelte: string;
 		npm_package_devDependencies__types_eslint: string;
+		npm_package_devDependencies__uklick_icon_components: string;
 		npm_package_exports___default: string;
 		npm_package_exports___gql_import: string;
 		npm_package_exports___svelte: string;

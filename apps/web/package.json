@@ -2,7 +2,7 @@
 	"name": "uklickstudios",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "cross-env vite dev",
+		"dev": "vite dev",
 		"build": "svelte-kit sync && vite build",
 		"generate": "graphql-codegen",
 		"preview": "vite preview",

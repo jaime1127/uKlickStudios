@@ -16,15 +16,3 @@ export const imageQuery = gql`
 		}
 	}
 `;
-
-// export const fetchImageData = async (values: string) => {
-// 	try {
-// 		const response = await request(HYGRAPH_API_ENDPOINT, imageQuery, <TestQuery>{
-// 			id: values
-// 		});
-// 		return response;
-// 	} catch (error) {
-// 		console.error('Error fetching image data:', error);
-// 		throw error;
-// 	}
-// };

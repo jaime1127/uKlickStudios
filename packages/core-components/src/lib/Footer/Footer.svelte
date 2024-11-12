@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Facebook from '../../icon-components/Facebook.svelte';
-	import Instagram from '../../icon-components/Instagram.svelte';
+	import { Facebook, Instagram } from '@uklick/icon-components';
 	import Icon from '../Icon/Icon.svelte';
 
 	export let company: string | undefined = undefined;
