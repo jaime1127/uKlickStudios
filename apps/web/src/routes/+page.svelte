@@ -3,7 +3,7 @@
 	// import Button from '@uklickstudios/core-components'
 	// import { Container } from '@uklick/core-components';
 
-	export let data: PageServerData;
+	// export let data: PageServerData;
 </script>
 
 <!-- <Container></Container> -->
