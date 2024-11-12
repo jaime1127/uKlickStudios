@@ -1,6 +1,6 @@
 {
-	"name": "uklickstudios",
-	"version": "0.0.1",
+	"name": "uklickstudios-monorepo",
+	"private": "true",
 	"scripts": {
 		"dev": "cd apps/web && npm run dev",
 		"build": "cd apps/web && npm run build",
@@ -24,6 +24,6 @@
 	"packageManager": "pnpm@9.6.0",
 	"engines": {
 		"pnpm": "^9.0.0",
-		"node":"^20.13.1"
+		"node": "^20.13.1"
 	}
 }

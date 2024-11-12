@@ -1,7 +1,7 @@
 {
-	"name": "@uklick/core-components",
+	"name": "@uklick/icon-components",
 	"version": "0.0.1",
-	"description": "Svelte Core Components for uKlick Studios",
+	"description": "Svelte Icon Components for uKlick Studios",
 	"type": "module",
 	"module": ".src/index.ts",
 	"svelte": "./src/index.ts",

@@ -87,6 +87,7 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const npm_package_name: string;
 	export const npm_package_packageManager: string;
+	export const npm_package_private: string;
 	export const npm_package_scripts_build: string;
 	export const npm_package_scripts_check: string;
 	export const npm_package_scripts_dev: string;
@@ -227,6 +228,7 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		npm_package_name: string;
 		npm_package_packageManager: string;
+		npm_package_private: string;
 		npm_package_scripts_build: string;
 		npm_package_scripts_check: string;
 		npm_package_scripts_dev: string;

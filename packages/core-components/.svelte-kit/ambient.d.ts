@@ -90,6 +90,7 @@ declare module '$env/static/private' {
 	export const npm_package_exports___default: string;
 	export const npm_package_exports___gql_import: string;
 	export const npm_package_exports___svelte: string;
+	export const npm_package_license: string;
 	export const npm_package_module: string;
 	export const npm_package_name: string;
 	export const npm_package_peerDependencies_graphql_request: string;
@@ -103,6 +104,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_prepare: string;
 	export const npm_package_scripts_storybook: string;
 	export const npm_package_scripts_test_unit: string;
+	export const npm_package_sideEffects: string;
 	export const npm_package_svelte: string;
 	export const npm_package_type: string;
 	export const npm_package_version: string;
@@ -237,6 +239,7 @@ declare module '$env/dynamic/private' {
 		npm_package_exports___default: string;
 		npm_package_exports___gql_import: string;
 		npm_package_exports___svelte: string;
+		npm_package_license: string;
 		npm_package_module: string;
 		npm_package_name: string;
 		npm_package_peerDependencies_graphql_request: string;
@@ -250,6 +253,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_prepare: string;
 		npm_package_scripts_storybook: string;
 		npm_package_scripts_test_unit: string;
+		npm_package_sideEffects: string;
 		npm_package_svelte: string;
 		npm_package_type: string;
 		npm_package_version: string;

@@ -4,13 +4,7 @@
 	// import { Container } from '@uklick/core-components';
 
 	export let data: PageServerData;
-
-	function reverseString(str) {
-  return str.split("").reverse().join("");
-}
-
 </script>
-{JSON.stringify(reverseString('dog'))}
 
 <!-- <Container></Container> -->
 <!-- <Button text="Button" size="medium" />

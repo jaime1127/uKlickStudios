@@ -30,6 +30,97 @@ importers:
         specifier: ^2.0.0
         version: 2.1.4(@types/node@22.9.0)
 
+  apps/web:
+    dependencies:
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      graphql:
+        specifier: ^16.9.0
+        version: 16.9.0
+      graphql-request:
+        specifier: ^7.1.0
+        version: 7.1.2(graphql@16.9.0)
+    devDependencies:
+      '@fontsource/fira-mono':
+        specifier: ^5.0.0
+        version: 5.1.0
+      '@graphql-codegen/cli':
+        specifier: ^5.0.2
+        version: 5.0.3(@types/node@22.9.0)(graphql@16.9.0)(typescript@5.6.3)
+      '@neoconfetti/svelte':
+        specifier: ^2.0.0
+        version: 2.2.1
+      '@playwright/test':
+        specifier: ^1.28.2
+        version: 1.48.2
+      '@sveltejs/adapter-auto':
+        specifier: ^3.0.0
+        version: 3.3.1(@sveltejs/kit@2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))
+      '@sveltejs/kit':
+        specifier: ^2.0.0
+        version: 2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^3.0.0
+        version: 3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@types/eslint':
+        specifier: ^9.6.0
+        version: 9.6.1
+      '@uklick/content-components':
+        specifier: workspace:*
+        version: link:../../packages/content-components
+      '@uklick/core-components':
+        specifier: workspace:*
+        version: link:../../packages/icon-components
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
+      eslint:
+        specifier: ^9.0.0
+        version: 9.14.0(jiti@2.4.0)
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@9.14.0(jiti@2.4.0))
+      eslint-plugin-svelte:
+        specifier: ^2.36.0
+        version: 2.46.0(eslint@9.14.0(jiti@2.4.0))(svelte@4.2.19)
+      globals:
+        specifier: ^15.0.0
+        version: 15.12.0
+      postcss:
+        specifier: ^8.4.41
+        version: 8.4.47
+      prettier:
+        specifier: ^3.1.1
+        version: 3.3.3
+      prettier-plugin-svelte:
+        specifier: ^3.1.2
+        version: 3.2.7(prettier@3.3.3)(svelte@4.2.19)
+      svelte:
+        specifier: ^4.2.7
+        version: 4.2.19
+      svelte-check:
+        specifier: ^3.6.0
+        version: 3.8.6(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)
+      svelte-preprocess:
+        specifier: ^6.0.2
+        version: 6.0.3(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)(typescript@5.6.3)
+      tailwindcss:
+        specifier: ^3.4.7
+        version: 3.4.14
+      typescript:
+        specifier: ^5.5.4
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.0.0
+        version: 8.14.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
+      vite:
+        specifier: ^5.0.3
+        version: 5.4.10(@types/node@22.9.0)
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.4(@types/node@22.9.0)
+
   packages/content-components:
     dependencies:
       dotenv:
@@ -117,9 +208,173 @@ importers:
 
   packages/core-components:
     dependencies:
-      svelte:
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      graphql:
+        specifier: ^16.9.0
+        version: 16.9.0
+      graphql-request:
+        specifier: ^7.1.0
+        version: 7.1.2(graphql@16.9.0)
+    devDependencies:
+      '@fontsource/fira-mono':
+        specifier: ^5.0.0
+        version: 5.1.0
+      '@graphql-codegen/cli':
+        specifier: ^5.0.2
+        version: 5.0.3(@types/node@22.9.0)(graphql@16.9.0)(typescript@5.6.3)
+      '@neoconfetti/svelte':
+        specifier: ^2.0.0
+        version: 2.2.1
+      '@playwright/test':
+        specifier: ^1.28.1
+        version: 1.48.2
+      '@sveltejs/adapter-auto':
         specifier: ^3.0.0
-        version: 3.59.2
+        version: 3.3.1(@sveltejs/kit@2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))
+      '@sveltejs/kit':
+        specifier: ^2.0.0
+        version: 2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^3.0.0
+        version: 3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@types/eslint':
+        specifier: ^9.6.0
+        version: 9.6.1
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
+      eslint:
+        specifier: ^9.0.0
+        version: 9.14.0(jiti@2.4.0)
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@9.14.0(jiti@2.4.0))
+      eslint-plugin-svelte:
+        specifier: ^2.36.0
+        version: 2.46.0(eslint@9.14.0(jiti@2.4.0))(svelte@4.2.19)
+      globals:
+        specifier: ^15.0.0
+        version: 15.12.0
+      postcss:
+        specifier: ^8.4.41
+        version: 8.4.47
+      prettier:
+        specifier: ^3.1.1
+        version: 3.3.3
+      prettier-plugin-svelte:
+        specifier: ^3.1.2
+        version: 3.2.7(prettier@3.3.3)(svelte@4.2.19)
+      svelte:
+        specifier: ^4.2.7
+        version: 4.2.19
+      svelte-check:
+        specifier: ^3.6.0
+        version: 3.8.6(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)
+      svelte-preprocess:
+        specifier: ^6.0.2
+        version: 6.0.3(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)(typescript@5.6.3)
+      tailwindcss:
+        specifier: ^3.4.7
+        version: 3.4.14
+      typescript:
+        specifier: ^5.5.4
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.0.0
+        version: 8.14.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
+      vite:
+        specifier: ^5.0.3
+        version: 5.4.10(@types/node@22.9.0)
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.4(@types/node@22.9.0)
+
+  packages/icon-components:
+    dependencies:
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
+      graphql:
+        specifier: ^16.9.0
+        version: 16.9.0
+      graphql-request:
+        specifier: ^7.1.0
+        version: 7.1.2(graphql@16.9.0)
+    devDependencies:
+      '@fontsource/fira-mono':
+        specifier: ^5.0.0
+        version: 5.1.0
+      '@graphql-codegen/cli':
+        specifier: ^5.0.2
+        version: 5.0.3(@types/node@22.9.0)(graphql@16.9.0)(typescript@5.6.3)
+      '@neoconfetti/svelte':
+        specifier: ^2.0.0
+        version: 2.2.1
+      '@playwright/test':
+        specifier: ^1.28.1
+        version: 1.48.2
+      '@sveltejs/adapter-auto':
+        specifier: ^3.0.0
+        version: 3.3.1(@sveltejs/kit@2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))
+      '@sveltejs/kit':
+        specifier: ^2.0.0
+        version: 2.8.0(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0)))(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^3.0.0
+        version: 3.1.2(svelte@4.2.19)(vite@5.4.10(@types/node@22.9.0))
+      '@types/eslint':
+        specifier: ^9.6.0
+        version: 9.6.1
+      autoprefixer:
+        specifier: ^10.4.20
+        version: 10.4.20(postcss@8.4.47)
+      eslint:
+        specifier: ^9.0.0
+        version: 9.14.0(jiti@2.4.0)
+      eslint-config-prettier:
+        specifier: ^9.1.0
+        version: 9.1.0(eslint@9.14.0(jiti@2.4.0))
+      eslint-plugin-svelte:
+        specifier: ^2.36.0
+        version: 2.46.0(eslint@9.14.0(jiti@2.4.0))(svelte@4.2.19)
+      globals:
+        specifier: ^15.0.0
+        version: 15.12.0
+      postcss:
+        specifier: ^8.4.41
+        version: 8.4.47
+      prettier:
+        specifier: ^3.1.1
+        version: 3.3.3
+      prettier-plugin-svelte:
+        specifier: ^3.1.2
+        version: 3.2.7(prettier@3.3.3)(svelte@4.2.19)
+      svelte:
+        specifier: ^4.2.7
+        version: 4.2.19
+      svelte-check:
+        specifier: ^3.6.0
+        version: 3.8.6(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)
+      svelte-preprocess:
+        specifier: ^6.0.2
+        version: 6.0.3(@babel/core@7.26.0)(postcss-load-config@4.0.2(postcss@8.4.47))(postcss@8.4.47)(svelte@4.2.19)(typescript@5.6.3)
+      tailwindcss:
+        specifier: ^3.4.7
+        version: 3.4.14
+      typescript:
+        specifier: ^5.5.4
+        version: 5.6.3
+      typescript-eslint:
+        specifier: ^8.0.0
+        version: 8.14.0(eslint@9.14.0(jiti@2.4.0))(typescript@5.6.3)
+      vite:
+        specifier: ^5.0.3
+        version: 5.4.10(@types/node@22.9.0)
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.4(@types/node@22.9.0)
 
 packages:
 
@@ -2678,10 +2933,6 @@ packages:
         optional: true
       typescript:
         optional: true
-
-  svelte@3.59.2:
-    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
-    engines: {node: '>= 8'}
 
   svelte@4.2.19:
     resolution: {integrity: sha512-IY1rnGr6izd10B0A8LqsBfmlT5OILVuZ7XsI0vdGPEvuonFV7NYEUK4dAkm9Zg2q0Um92kYjTpS1CAP3Nh/KWw==}
@@ -5777,8 +6028,6 @@ snapshots:
       postcss: 8.4.47
       postcss-load-config: 4.0.2(postcss@8.4.47)
       typescript: 5.6.3
-
-  svelte@3.59.2: {}
 
   svelte@4.2.19:
     dependencies:
