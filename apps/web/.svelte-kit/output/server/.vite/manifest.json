@@ -8,6 +8,10 @@
       "_internal.js"
     ]
   },
+  "_escape.js": {
+    "file": "chunks/escape.js",
+    "name": "escape"
+  },
   "_exports.js": {
     "file": "chunks/exports.js",
     "name": "exports"
@@ -30,7 +34,8 @@
     "isEntry": true,
     "imports": [
       "_ssr.js",
-      "_exports.js"
+      "_exports.js",
+      "_escape.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -104,7 +109,8 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_ssr.js"
+      "_ssr.js",
+      "_escape.js"
     ]
   }
 }

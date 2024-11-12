@@ -1,5 +1,5 @@
 {
-	"name": "@uklick/core-components",
+	"name": "@uklickstudios/core-components",
 	"version": "1.0.0",
 	"main": ".src/index.ts",
 	"type": "module",
