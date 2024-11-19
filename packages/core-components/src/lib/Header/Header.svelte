@@ -2,6 +2,7 @@
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
 	import { ToogleMenu, CloseMenu } from '@uklick/icon-components';
+	import Icon from '../Icon/Icon.svelte';
 
 	let items = [
 		{ label: 'Book', href: '/book' },
@@ -53,7 +54,7 @@
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
 		<button type="button" class="lg:hidden text-gray-300 hover:text-white" on:click={toggleMenu}>
 			<span class="sr-only">Open menu</span>
-			<ToogleMenu />
+			<Icon label="" link={''} iconSvg={ToogleMenu} />
 		</button>
 	</nav>
 	{#if isMenuOpen}

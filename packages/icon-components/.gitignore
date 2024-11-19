@@ -5,14 +5,19 @@ node_modules
 *.pem
 *.cjs
 actual-user.npmrc
+\.svelte-kit
 
 # Output
 .output
 .vercel
-
-#svelte
+/.svelte-kit
 .svelte-kit
 /build
+/package
+/dist
+pnpm-lock.yaml
+package-lock.json
+
 
 # OS
 .DS_Store
@@ -27,4 +32,4 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-node_modules
+C
