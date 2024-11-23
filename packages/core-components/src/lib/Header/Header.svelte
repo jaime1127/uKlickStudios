@@ -52,9 +52,9 @@
 			{/each}
 		</div>
 		<div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
-		<button type="button" class="lg:hidden text-gray-300 hover:text-white" on:click={toggleMenu}>
+		<button type="button" class="lg:hidden text-gray-300 hover:text-white w-8" on:click={toggleMenu}>
 			<span class="sr-only">Open menu</span>
-			<Icon label="" link={''} iconSvg={ToogleMenu} />
+			<Icon label="label" link={''} iconSvg={ToogleMenu} />
 		</button>
 	</nav>
 	{#if isMenuOpen}
