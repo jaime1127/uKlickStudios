@@ -1,18 +1,27 @@
-import request, { gql } from 'graphql-request';
-// import { HYGRAPH_API_ENDPOINT } from '../../../../apps/web/';
-// import type { TestQuery } from '$lib/generated/types';
+import { gql } from 'graphql-request';
 
-export const imageQuery = gql`
-	query test($id: ID!) {
-		asset(where: { id: $id }) {
+export type { GetHeroQuery } from './generated/gql/types';
+
+export const heroQuery = gql`
+	query getHero($slug: String!) {
+		hero(where: { slug: $slug }) {
 			id
-			handle
-			fileName
-			mimeType
-			width
-			height
-			size
-			url
+			slug
+			blog
+			heading
+			description
+			asset {
+				id
+				fileName
+				size
+				mimeType
+				url
+				width
+				height
+				handle
+				alt
+				__typename
+			}
 		}
 	}
 `;

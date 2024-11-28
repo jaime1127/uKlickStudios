@@ -1,5 +1,6 @@
 import { HYGRAPH_API_ENDPOINT } from '$env/static/private';
-import type { TestQuery } from '$lib/generated/types';
+import type { TestQuery } from '$lib/generated/gql/types';
+import { heroQuery, type GetHeroQuery } from '@uklick/content-components/gql';
 import request, { gql } from 'graphql-request';
 
 export const imageQuery = gql`
@@ -31,8 +32,8 @@ export const fetchImageData = async (values: string) => {
 
 export const fetchHeroData = async (values: string) => {
 	try {
-		const response = await request(HYGRAPH_API_ENDPOINT, imageQuery, <TestQuery>{
-			id: values
+		const response = await request(HYGRAPH_API_ENDPOINT, heroQuery, <GetHeroQuery>{
+			slug: values
 		});
 		return response;
 	} catch (error) {

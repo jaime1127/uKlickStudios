@@ -1,34 +1,12 @@
 <script lang="ts">
-	import { gql } from 'graphql-request';
-
-	export const heroQuery = gql`
-		query test($slug: slug!) {
-			hero(where: $where) {
-				id
-				slug
-				blog
-				heading
-				description
-				asset {
-					id
-					fileName
-					size
-					mimeType
-					url
-					width
-					height
-					handle
-					__typename
-				}
-			}
-		}
-	`;
-
-	export let slug: string | undefined = undefined;
+	export let slug: string | undefined = '';
 	export let blog: string | undefined = undefined;
 	export let heading: string | undefined = undefined;
 	export let description: string | undefined = undefined;
-	export let asset: string | undefined = undefined;
+	export let asset: {
+		url: string;
+		alt: string;
+	};
 </script>
 
 <div class="relative bg-white">
@@ -40,7 +18,7 @@
 						class="relative rounded-full px-3 py-1 text-sm/6 text-gray-500 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
 					>
 						{blog}<a href="blog.href" class="whitespace-nowrap font-semibold text-indigo-600"
-							><span class="absolute inset-0" aria-hidden="true"></span>blog.label
+							><span class="absolute inset-0" aria-hidden="true"></span>
 							<span aria-hidden="true">&rarr;</span></a
 						>
 					</div>
@@ -68,8 +46,8 @@
 		<div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
 			<img
 				class="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-				src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2102&q=80"
-				alt=""
+				src={asset?.url}
+				alt={asset?.alt}
 			/>
 		</div>
 	</div>

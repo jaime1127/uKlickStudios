@@ -1,14 +1,15 @@
 <script lang="ts">
-	import type { PageServerData } from './$types';
-	import { Button } from '@uklick/core-components';
 	import { Hero } from '@uklick/content-components';
-	// import { Container } from '@uklick/core-components';
-
-	// export let data: PageServerData;
+	import type { LayoutServerData } from './$types';
+	export let data: LayoutServerData;
 </script>
 
-<Hero/>
-<!-- <Container></Container> -->
-<!-- <Button text="Button" size="medium" />
-<Button text="Button" />
-<Button text="Button" size="small" /> -->
+<Hero
+	blog={data.hero.hero?.blog ?? ''}
+	description={data.hero.hero?.description ?? ''}
+	asset={{
+		url: data.hero.hero?.asset?.url ?? '',
+		alt: data.hero.hero?.asset?.alt ?? ''
+	}}
+	heading={data.hero.hero?.heading ?? ''}
+/>

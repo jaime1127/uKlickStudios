@@ -11,6 +11,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"test:unit": "vitest",
 		"prepare": "svelte-kit sync",
+		"generate": "graphql-codegen",
 		"gql:gen": "graphql-codegen --config codegen.ts",
 		"storybook": "storybook dev -p 6006",
 		"build-storybook": "storybook build"
