@@ -2,3 +2,22 @@ packages:
   - 'packages/*'
   - 'apps/*'
   - 'scripts/*'
+
+catalog:
+  # build packages
+  "typescript": "^5.7.2"
+  "@sveltejs/kit": "^2.17.0"
+  "svelte": "^5.19.6"
+  "@sveltejs/vite-plugin-svelte": "^5.0.3"
+  "@sveltejs/adapter-auto": "^3.3.1"
+  "vite": "^6.0.11"
+  # testing packages
+  "vitest": "^3.0.4"
+  # linting packages
+  "eslint": "^9.7.0"
+  "svelte-check": "^4.1.4"
+  "prettier": "^3.4.1"
+  "prettier-plugin-svelte": "^3.3.2"
+  "eslint-config-prettier": "^9.1.0"
+  "@uklick/content-components": "workspace:*"
+  "@uklick/core-components": "workspace:*"

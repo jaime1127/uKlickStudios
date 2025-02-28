@@ -2,14 +2,20 @@
 	import { Hero } from '@uklick/content-components';
 	import type { LayoutServerData } from './$types';
 	export let data: LayoutServerData;
+
+	let walkingAnimation = false;
 </script>
 
 <Hero
-	blog={data.hero.hero?.blog ?? ''}
-	description={data.hero.hero?.description ?? ''}
+	blog={data.content.hero?.blog ?? ''}
+	description={data.content.hero?.description ?? ''}
 	asset={{
-		url: data.hero.hero?.asset?.url ?? '',
-		alt: data.hero.hero?.asset?.alt ?? ''
+		url: data.content.hero?.asset?.url ?? '',
+		alt: data.content.hero?.asset?.alt ?? ''
 	}}
-	heading={data.hero.hero?.heading ?? ''}
+	heading={data.content.hero?.heading ?? ''}
+	link={{
+		anchor: data.content.hero?.link?.anchor ?? '',
+		label: data.content.hero?.link?.label ?? ''
+	}}
 />

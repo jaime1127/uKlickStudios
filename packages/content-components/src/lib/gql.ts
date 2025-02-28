@@ -10,6 +10,13 @@ export const heroQuery = gql`
 			blog
 			heading
 			description
+			link {
+				__typename
+				id
+				slug
+				anchor
+				label
+			}
 			asset {
 				id
 				fileName
