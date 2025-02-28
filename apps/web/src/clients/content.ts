@@ -1,5 +1,6 @@
-import { HYGRAPH_API_ENDPOINT } from '$env/static/private';
 import type { TestQuery } from '$lib/generated/gql/types';
+
+import { HYGRAPH_API_ENDPOINT } from '$env/static/private';
 import { heroQuery, type GetHeroQuery } from '@uklick/content-components/gql';
 import request, { gql } from 'graphql-request';
 

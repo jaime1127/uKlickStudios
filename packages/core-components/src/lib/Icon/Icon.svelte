@@ -15,6 +15,7 @@
 		<span class="sr-only">{label}</span>
 	{/if}
 	{#if iconSvg}
-		<svelte:component this={iconSvg} />
+		{@const Component = iconSvg}
+		<Component {iconSvg} />
 	{/if}
 </a>

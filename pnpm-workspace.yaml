@@ -19,5 +19,3 @@ catalog:
   "prettier": "^3.4.1"
   "prettier-plugin-svelte": "^3.3.2"
   "eslint-config-prettier": "^9.1.0"
-  "@uklick/content-components": "workspace:*"
-  "@uklick/core-components": "workspace:*"
