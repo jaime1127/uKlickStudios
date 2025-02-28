@@ -1,16 +1,25 @@
 <script lang="ts">
-	export let slug: string | undefined = '';
-	export let blog: string | undefined = undefined;
-	export let heading: string | undefined = undefined;
-	export let description: string | undefined = undefined;
-	export let link: {
-		anchor: string;
-		label: string;
-	};
-	export let asset: {
-		url: string;
-		alt: string;
-	};
+	interface Props {
+		blog?: string | undefined;
+		heading?: string | undefined;
+		description?: string | undefined;
+		link?: {
+			anchor: string;
+			label: string;
+		};
+		asset?: {
+			url: string;
+			alt: string;
+		};
+	}
+
+	let {
+		blog = undefined,
+		heading = undefined,
+		description = undefined,
+		link = { anchor: '', label: '' },
+		asset = { url: '', alt: '' }
+	}: Props = $props();
 </script>
 
 <div class="relative bg-white">

@@ -1,6 +1,10 @@
 <script lang="ts">
-	let label: string;
-	let link: string;
+	interface Props {
+		label: string | undefined;
+		link: string | undefined;
+	}
+
+	let { label = undefined, link = undefined }: Props = $props();
 </script>
 
 <a href={link} class="text-gray-400 hover:text-gray-500">
