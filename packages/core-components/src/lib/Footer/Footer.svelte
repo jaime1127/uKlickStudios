@@ -3,6 +3,7 @@
 
 	import { Facebook, Instagram } from '@uklick/icon-components';
 	import Icon from '../Icon/Icon.svelte';
+	
 
 	interface Props {
 		socials?: {
