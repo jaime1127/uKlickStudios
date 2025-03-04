@@ -19,7 +19,11 @@
 	],
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.0.0",
-		"@graphql-codegen/cli": "^5.0.2",
+		"@graphql-codegen/cli": "catalog:",
+		"@graphql-codegen/introspect": "catalog:",
+		"@graphql-codegen/typescript": "catalog:",
+		"@graphql-codegen/typescript-graphql-request": "catalog:",
+		"@graphql-codegen/typescript-operations": "catalog:",
 		"@neoconfetti/svelte": "^2.0.0",
 		"@playwright/test": "^1.28.2",
 		"@sveltejs/adapter-auto": "catalog:",
@@ -32,7 +36,11 @@
 		"eslint": "catalog:",
 		"eslint-config-prettier": "catalog:",
 		"eslint-plugin-svelte": "^2.36.0",
+		"get-graphql-schema": "catalog:",
 		"globals": "^15.0.0",
+		"graphql": "catalog:",
+		"graphql-request": "catalog:",
+		"graphql-tag": "^2.12.5",
 		"postcss": "^8.4.41",
 		"prettier": "catalog:",
 		"prettier-plugin-svelte": "catalog:",
@@ -48,7 +56,6 @@
 	"type": "module",
 	"dependencies": {
 		"dotenv": "^16.4.5",
-		"graphql": "^16.9.0",
-		"graphql-request": "^7.1.0"
+		"graphql-request": "catalog:"
 	}
 }
