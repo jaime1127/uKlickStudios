@@ -7,15 +7,15 @@
 		iconSvg?: typeof SvelteComponent<any> | undefined;
 	}
 
-	let { label = undefined, link = undefined, iconSvg = undefined }: Props = $props();
+	let { label = undefined, link = undefined }: Props = $props();
 </script>
 
 <a href={link} class="text-gray-400 hover:text-gray-500">
 	{#if label}
 		<span class="sr-only">{label}</span>
 	{/if}
-	{#if iconSvg}
+	<!-- {#if iconSvg}
 		{@const Component = iconSvg}
 		<Component {iconSvg} />
-	{/if}
+	{/if} -->
 </a>

@@ -1,50 +1,15 @@
 <script lang="ts">
-import { gql } from 'graphql-request';
-
-export type { GetHeroQuery } from './generated/gql/types';
-
-export const heroQuery = gql`
-	query getHero($slug: String!) {
-		hero(where: { slug: $slug }) {
-			id
-			slug
-			blog
-			heading
-			description
-			link {
-				__typename
-				id
-				slug
-				anchor
-				label
-			}
-			asset {
-				id
-				fileName
-				size
-				mimeType
-				url
-				width
-				height
-				handle
-				alt
-				__typename
-			}
-		}
-	}
-`;
-
 	interface Props {
-		blog?: string | undefined;
-		heading?: string | undefined;
-		description?: string | undefined;
+		blog?: string | null;
+		heading?: string | null;
+		description?: string | null;
 		link?: {
-			anchor: string;
-			label: string;
+			anchor?: string | null;
+			label?: string | null;
 		};
 		asset?: {
-			url: string;
-			alt: string;
+			url?: string | null;
+			alt?: string | null;
 		};
 	}
 

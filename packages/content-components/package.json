@@ -42,6 +42,7 @@
 		"@sveltejs/kit": "catalog:",
 		"@sveltejs/vite-plugin-svelte": "catalog:",
 		"@types/eslint": "^9.6.0",
+		"@uklick/core-components": "workspace:*",
 		"autoprefixer": "^10.4.20",
 		"eslint": "catalog:",
 		"eslint-config-prettier": "catalog:",
