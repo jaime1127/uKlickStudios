@@ -34,7 +34,6 @@
 	"devDependencies": {
 		"@fontsource/fira-mono": "^5.0.0",
 		"@graphql-codegen/cli": "catalog:",
-		"@graphql-codegen/introspect": "catalog:",
 		"@graphql-codegen/typescript": "catalog:",
 		"@graphql-codegen/typescript-graphql-request": "catalog:",
 		"@graphql-codegen/typescript-operations": "catalog:",
