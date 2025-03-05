@@ -4,7 +4,7 @@
 	export let data: LayoutServerData;
 </script>
 
-<Hero
+<!-- <Hero
 	blog={data.content.hero?.blog}
 	description={data.content.hero?.description}
 	asset={{
@@ -16,4 +16,4 @@
 		anchor: data.content.hero?.link?.anchor,
 		label: data.content.hero?.link?.label
 	}}
-/>
+/> -->

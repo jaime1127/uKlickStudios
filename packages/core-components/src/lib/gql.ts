@@ -10,18 +10,6 @@ export const footerQuery = gql`
 			icons {
 				link
 				label
-				icon {
-					id
-					alt
-					fileName
-					size
-					mimeType
-					url
-					width
-					height
-					handle
-					__typename
-				}
 			}
 		}
 	}

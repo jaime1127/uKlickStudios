@@ -14,5 +14,10 @@
 </main>
 <Footer
 	company={data.layoutData?.footer?.ownership}
-	socials={data.layoutData?.footer?.icons?.icon}
+	socials={Array.isArray(data.layoutData?.footer?.icons)
+		? data.layoutData.footer.icons.map((icon) => ({
+				label: icon.label ?? '',
+				link: icon.link ?? ''
+			}))
+		: undefined}
 />
