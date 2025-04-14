@@ -14,3 +14,15 @@ export const footerQuery = gql`
 		}
 	}
 `;
+
+export const headerQuery = gql`
+	query getHeader($slug: String!) {
+		header(where: { slug: $slug }) {
+			links {
+				anchor
+				label
+				slug
+			}
+		}
+	}
+`;

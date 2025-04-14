@@ -26,11 +26,11 @@
 		"@neoconfetti/svelte": "^2.0.0",
 		"@playwright/test": "^1.28.2",
 		"@sveltejs/adapter-auto": "catalog:",
-		"@uklick/content-components": "workspace:*",
-		"@uklick/core-components": "workspace:*",
 		"@sveltejs/kit": "catalog:",
 		"@sveltejs/vite-plugin-svelte": "catalog:",
 		"@types/eslint": "^9.6.0",
+		"@uklick/content-components": "workspace:*",
+		"@uklick/core-components": "workspace:*",
 		"autoprefixer": "^10.4.20",
 		"eslint": "catalog:",
 		"eslint-config-prettier": "catalog:",
@@ -54,6 +54,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.5.0",
 		"dotenv": "^16.4.5",
 		"graphql-request": "catalog:"
 	}

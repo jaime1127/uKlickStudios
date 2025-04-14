@@ -2,10 +2,11 @@
 	import { Footer, Header } from '@uklick/core-components';
 	import '$styles/tailwind.css';
 	import type { LayoutServerData } from './$types';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
 
 	export let data: LayoutServerData;
 
-	console.log(data);
+	injectAnalytics({ mode: 'production' });
 </script>
 
 <Header logo={data.image.asset?.url} />

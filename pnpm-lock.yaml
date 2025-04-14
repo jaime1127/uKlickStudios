@@ -92,6 +92,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@vercel/analytics':
+        specifier: ^1.5.0
+        version: 1.5.0(@sveltejs/kit@2.17.3(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0)))(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0)))(svelte@5.20.5)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -1486,6 +1489,32 @@ packages:
   '@typescript-eslint/visitor-keys@8.14.0':
     resolution: {integrity: sha512-vG0XZo8AdTH9OE6VFRwAZldNc7qtJ/6NLGWak+BtENuEUXGZgFpihILPiBvKXvJ2nFu27XNGC6rKiwuaoMbYzQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@vercel/analytics@1.5.0':
+    resolution: {integrity: sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==}
+    peerDependencies:
+      '@remix-run/react': ^2
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@remix-run/react':
+        optional: true
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@vitest/expect@3.0.7':
     resolution: {integrity: sha512-QP25f+YJhzPfHrHfYHtvRn+uvkCFCqFtW9CktfBxmB+25QqWsx7VB2As6f4GmwllHLDhXNHvqedwhvMmSnNmjw==}
@@ -4662,6 +4691,11 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.14.0
       eslint-visitor-keys: 3.4.3
+
+  '@vercel/analytics@1.5.0(@sveltejs/kit@2.17.3(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0)))(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0)))(svelte@5.20.5)':
+    optionalDependencies:
+      '@sveltejs/kit': 2.17.3(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0)))(svelte@5.20.5)(vite@6.2.0(@types/node@22.9.0)(jiti@2.4.0)(yaml@2.6.0))
+      svelte: 5.20.5
 
   '@vitest/expect@3.0.7':
     dependencies:
